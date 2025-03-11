@@ -11,14 +11,8 @@ let username = "";
 
 // Función de login
 function login() {
-  // const username = document.getElementById("username").value;
-  // const password = document.getElementById("password").value;
-  // const username = "seller456";
-  // const password = "Intro123";
-  // const username = "dancabello";
-  // const password = "J5*asdRD.s";
-  username = "root";
-  const password = "dochouse";
+  username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
 
   if (users[username] === password) {
     currentUser = username;
@@ -407,6 +401,9 @@ function addProduct() {
 }
 
 function displayUsersList() {
+  const usersListContainer = document.getElementById("users-list-container");
+  usersListContainer.style.display = "block";
+
   const usersList = document.getElementById("users-list");
   usersList.innerHTML = "";
   for (const [key, value] of Object.entries(users)) {
@@ -433,3 +430,4 @@ function toggleForms() {
   document.getElementById("login-form").style.display = "none";
   document.getElementById("product-list").style.display = "block";
 }
+
