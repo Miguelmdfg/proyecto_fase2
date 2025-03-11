@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda Online BynaryShop</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="login-form" class="form-container">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Usuario" required />
+      <input type="password" id="password" placeholder="Contraseña" required />
+      <button onclick="login()">Entrar</button>
+      <p id="login-message"></p>
+    </div>
+
+    <div id="product-list" class="product-list"></div>
+
+    <div id="cart" class="cart">
+      <h2>Carrito de Compras</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: <span id="total-price">0</span>€</p>
+      <div id="buy"></div>
+    </div>
+
+    <div id="add-product-form" class="form-container" style="display: none">
+      <h2>Añadir Producto</h2>
+      <input
+        type="text"
+        id="product-name"
+        placeholder="Nombre del Producto"
+        required
+      />
+      <input type="number" id="product-price" placeholder="Precio" required />
+      <input type="file" id="product-image" required />
+      <button onclick="addProduct()">Añadir</button>
+    </div>
+
+    <div id="buying-form" style="display: none">
+    </div>
+
+    <div>
+      <h2>Usuarios</h2>
+      <div class="users-list">
+        <div id="users-list">
+      </div>
+    </div>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

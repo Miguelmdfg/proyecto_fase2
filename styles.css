@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: inline;
+  flex-wrap: wrap;
+}
+
+.product {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+}
+
+.cart {
+  display: none;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#buying-form {
+  background-color: #fefefe;
+  left: 0;
+  top: 0;
+  position: fixed;
+  overflow: auto;
+  margin: 20% auto;
+  margin-left: 40%;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+#close-btn {
+  float: right;
+  margin: 10px auto;
+}
+
+.delete-product-btn {
+  display: none;
+}
+
+.buying-btns {
+  display: none;
+}
+
+.users-list {
+  border: 1px solid #ccc;
+  padding: 10px;
+  column-count: 2;
+  column-gap: 40px;
+  column-rule: 1px solid;
+  column-width: 50%;
+}
